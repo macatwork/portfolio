@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.tailwindcdn.com/1.1.4/tailwind.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6 fixed w-full z-10 top-0">
+		<div class="flex items-center flex-shrink-0 text-white mr-6">
+			<a class="text-white no-underline hover:text-white hover:no-underline" href="#">
+				<span class="text-2xl pl-2">Name Portfolio</span>
+			</a>
+        </div>
+        
+        <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
+			<ul class="list-reset lg:flex justify-end flex-1 items-center">
+				<li class="mr-3">
+					<a class="inline-block py-2 px-4 text-white no-underline" href="#">Active</a>
+				</li>
+				<li class="mr-3">
+					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+				</li>
+				<li class="mr-3">
+					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+				</li>
+				<li class="mr-3">
+					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="block lg:hidden">
+			<button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-white hover:border-white">
+				<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+			</button>
+        </div>
+    </nav>
+    <div class="mx-auto h-screen bg-blue-600">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+        <!-- Left -->
+        <div class="flex flex-col w-full lg:w-1/2 justify-center items-start pt-12 pb-24 md:my-64">
+            <h1 class="uppercase font-bold text-4xl my-4">Title Goes Here</h1>
+            <p class="leading-normal text-lg mb-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod minima nobis doloremque sint sapiente, id quidem odit vitae magni beatae obcaecati omnis consequuntur facilis quaerat similique ipsam dicta nostrum quisquam.</p>
+            <button class='bg-red-600 hover:bg-gray-900 text-gray-900 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-gray-900 hover:border-transparent'>Button</button>
+        </div>
+        <!-- Right -->
+        <div class="w-full lg:w-1/2 lg:py-6 text-center">
+            <!-- Image Goes Here (animation dev/guitar/skate)-->
+            <img src="coding.svg" class='w-64 ml-64'>
+        </div>
+    </div>
+    <div class="mouse">
+        <span class='border'></span>
+    </div>
+    </div>
+    <div class="features-title bg-red-600">
+        <h1 class='text-4xl mx-auto text-center py-5'>Features</h1>
+    </div>
+    <div class="p-24 flex flex-wrap items-center bg-red-600 justify-center">
+
+        <div class="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
+          <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
+            <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white"/>
+            <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white"/>            
+          </svg>
+          <div class="relative pt-10 px-10 flex items-center justify-center">
+            <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+            <ion-icon name="logo-html5" style='font-size: 5rem;'></ion-icon>
+        </div>
+          <div class="relative text-white px-6 pb-6 mt-6">
+            <div class="flex justify-between">
+              <span class="font-semibold mx-auto text-center text-xl">HTML 5</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-0 m-6 relative overflow-hidden bg-blue-500 rounded-lg max-w-xs shadow-lg">
+          <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
+            <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white"/>
+            <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white"/>
+          </svg>
+          <div class="relative pt-10 px-10 flex items-center justify-center">
+            <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+            <ion-icon name='logo-css3' style='font-size: 5rem;'></ion-icon>
+        </div>
+          <div class="relative text-white px-6 pb-6 mt-6">
+            <div class="flex justify-between">
+              <span class="block font-semibold mx-auto text-center text-xl">CSS3</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex-shrink-0 m-6 relative overflow-hidden bg-yellow-500 rounded-lg max-w-xs shadow-lg">
+          <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
+            <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white"/>
+            <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white"/>
+
+          </svg>
+        <div class="relative pt-10 px-10 flex items-center justify-center">
+            <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+            <ion-icon name='logo-javascript' style='font-size: 5rem'></ion-icon>
+        </div>
+          <div class="relative text-white px-6 pb-6 mt-6">
+            <div class="flex justify-between">
+              <span class="block font-semibold text-xl">JavaScript</span>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="break"></div>
+
+        <div class="flex-shrink-0 m-6 relative overflow-hidden bg-pink-500 rounded-lg max-w-xs shadow-lg">
+            <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
+              <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white"/>
+              <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white"/>
+  
+            </svg>
+          <div class="relative pt-10 px-10 flex items-center justify-center">
+              <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+              <ion-icon name='logo-sass' style='font-size: 5rem'></ion-icon>
+          </div>
+            <div class="relative text-white px-6 pb-6 mt-6">
+              <div class="flex justify-between">
+                <span class="block font-semibold text-xl">SASS</span>
+              </div>
+            </div>
+            
+          </div>
+          <div class="flex-shrink-0 m-6 relative overflow-hidden bg-blue-400 rounded-lg max-w-xs shadow-lg">
+            <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
+              <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white"/>
+              <rect y="107.48" width="152" height="152" rx="8" transform="rotate(-45 0 107.48)" fill="white"/>
+  
+            </svg>
+          <div class="relative pt-10 px-10 flex items-center justify-center">
+              <div class="block absolute w-48 h-48 bottom-0 left-0 -mb-24 ml-3" style="background: radial-gradient(black, transparent 60%); transform: rotate3d(0, 0, 1, 20deg) scale3d(1, 0.6, 1); opacity: 0.2;"></div>
+              <ion-icon name='logo-react' style='font-size: 5rem'></ion-icon>
+          </div>
+            <div class="relative text-white px-6 pb-6 mt-6">
+              <div class="flex justify-between">
+                <span class="block font-semibold text-xl">React</span>
+              </div>
+            </div>
+            
+          </div>
+       </div>
+        </div>
+      
+    
+	<script>
+		//Javascript to toggle the menu
+		document.getElementById('nav-toggle').onclick = function(){
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+    </script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>
