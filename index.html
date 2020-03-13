@@ -8,26 +8,27 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+  <a name='home'></a>
     <nav class="flex items-center justify-between flex-wrap bg-gray-800 p-6 fixed w-full z-10 top-0">
 		<div class="flex items-center flex-shrink-0 text-white mr-6">
 			<a class="text-white no-underline hover:text-white hover:no-underline" href="#">
-				<span class="text-2xl pl-2">Name Portfolio</span>
+				<span class="text-2xl pl-2">Name</span>
 			</a>
         </div>
         
         <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content">
 			<ul class="list-reset lg:flex justify-end flex-1 items-center">
 				<li class="mr-3">
-					<a class="inline-block py-2 px-4 text-white no-underline" href="#">Active</a>
+					<a class="inline-block py-2 px-4 text-white no-underline" href="#home">Home</a>
 				</li>
 				<li class="mr-3">
-					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#about">About</a>
 				</li>
 				<li class="mr-3">
-					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#portfolio">Portfolio</a>
 				</li>
 				<li class="mr-3">
-					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#">link</a>
+					<a class="inline-block text-gray-600 no-underline hover:text-gray-200 hover:text-underline py-2 px-4" href="#contact">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -55,12 +56,35 @@
     <div class="mouse">
         <span class='border'></span>
     </div>
+    <a name='about'></a>
     </div>
-    <div class="features-title bg-red-600">
-        <h1 class='text-4xl mx-auto text-center py-5'>Features</h1>
-    </div>
-    <div class="p-24 flex flex-wrap items-center bg-red-600 justify-center">
 
+    <section id="about" class="bg-blue-900">
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
+        <a class="skills uppercase tracking-wide no-underline hover:no-underline font-bold text-white mt-8 text-xl " href="#">
+          About
+        </a>
+      </div>
+      <div class="p-flex flex-wrap items-center bg-blue-900 justify-center">
+        <h1 class="text-3xl text-center">Name</h1>
+
+        <div class="p-flex flex-wrap items-center w-1/4 py-10 bg-blue-900 mx-auto text-white justify-center">
+          <img src="place.png" alt="" class="mx-auto mb-5">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo voluptatem rerum officiis iusto eius repudiandae esse atque ratione. Excepturi cupiditate fugiat perferendis! Dolorum eos earum minus cumque nobis. Ex voluptatum explicabo obcaecati maiores nemo sunt animi quae iusto totam deserunt earum, quos, molestiae architecto dolor non numquam hic. Sed, corporis.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab quisquam assumenda, fugit iure libero qui praesentium reprehenderit voluptas nulla nisi magni nostrum eos rerum quibusdam! Nihil quasi autem minima incidunt eius quia accusamus aliquam consequuntur assumenda, explicabo facere facilis natus iusto perspiciatis voluptatibus sequi eum corporis obcaecati omnis eos perferendis!
+      </div>  
+      </div>
+      <a name='skills'></a>
+      </section>
+
+    <section id="skills" class="bg-red-600 py-10">
+    <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
+      <a class="skills uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 mt-8 text-xl " href="#">
+        Skills
+      </a>
+    </div>
+    <div class="p- flex flex-wrap items-center bg-red-600 justify-center">
+    
         <div class="flex-shrink-0 m-6 relative overflow-hidden bg-orange-500 rounded-lg max-w-xs shadow-lg">
           <svg class="absolute bottom-0 left-0 mb-8" viewBox="0 0 375 283" fill="none" style="transform: scale(1.5); opacity: 0.1;">
             <rect x="159.52" y="175" width="152" height="152" rx="8" transform="rotate(-45 159.52 175)" fill="white"/>
@@ -147,7 +171,219 @@
           </div>
        </div>
         </div>
-      
+      </div>
+      <a name='portfolio'></a>
+    </section>
+
+        <section id='portfolio' class="bg-yellow-600 py-8">
+
+          <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+  
+                  <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
+  
+                      <a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="#">
+          Portfolio
+        </a>
+
+                </div>
+              </nav>
+  
+              <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                      <img onclick='openModal()' class="hover:grow hover:shadow-lg" src="place.png">
+                      <div class="pt-3 flex items-center justify-between">
+                          <p>Item Name</p>
+                         
+                      </div>
+                  </a>
+              </div>
+
+              <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                      <img class="hover:grow hover:shadow-lg" src="place.png">
+                      <div class="pt-3 flex items-center justify-between">
+                          <p>Item Name</p>
+                         
+                      </div>
+                  </a>
+              </div>
+
+              <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                      <img class="hover:grow hover:shadow-lg" src="place.png">
+                      <div class="pt-3 flex items-center justify-between">
+                          <p>Item Name</p>
+                         
+                      </div>
+                  </a>
+              </div>
+               
+              <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                      <img class="hover:grow hover:shadow-lg" src="place.png">
+                      <div class="pt-3 flex items-center justify-between">
+                          <p>Item Name</p>
+                         
+                      </div>
+                  </a>
+              </div>
+  
+              <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                      <img class="hover:grow hover:shadow-lg" src="place.png">
+                      <div class="pt-3 flex items-center justify-between">
+                          <p>Item Name</p>
+                         
+                      </div>
+                  </a>
+              </div>
+  
+              <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                      <img class="hover:grow hover:shadow-lg" src="place.png">
+                      <div class="pt-3 flex items-center justify-between">
+                          <p>Item Name</p>
+                         
+                      </div>
+                  </a>
+              </div>
+  
+              <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                      <img class="hover:grow hover:shadow-lg" src="place.png">
+                      <div class="pt-3 flex items-center justify-between">
+                          <p>Item Name</p>
+                         
+                      </div>
+                  </a>
+              </div>
+  
+              <div class="w-full md:w-1/3 xl:w-1/4 p-6 flex flex-col">
+                  <a href="#">
+                      <img class="hover:grow hover:shadow-lg" src="place.png">
+                      <div class="pt-3 flex items-center justify-between">
+                          <p>Item Name</p>
+                         
+                      </div>
+                  </a>
+              </div>
+  
+              </div>
+              <a name='contact'></a>
+      </section>
+      <section id='contact' class='bg-green-600'>
+
+          <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+  
+            <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 px-2 py-3">
+
+                <a class="uppercase tracking-wide no-underline hover:no-underline font-bold text-gray-800 text-xl " href="#">
+    Contact
+  </a>
+
+          </div>
+        <div class="bg-green-600 mx-auto text-center max-w-4xl  flex flex-col my-2">
+          <div class="-mx-3 md:flex mb-6">
+            <div class="md:w-1/2 px-3 mb-6 md:mb-0">
+              <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-first-name">
+                First Name
+              </label>
+              <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-red rounded py-3 px-4 mb-3" id="grid-first-name" type="text" placeholder="Jane">
+            </div>
+            <div class="md:w-1/2 px-3">
+              <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-last-name">
+                Email
+              </label>
+              <input class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4" id="grid-last-name" type="email" placeholder="Doe">
+            </div>
+          </div>
+          <div class="-mx-3 md:flex mb-6">
+            <div class="md:w-full px-3">
+              <label class="block uppercase tracking-wide text-grey-darker text-xs font-bold mb-2" for="grid-password">
+                Message
+              </label>
+              <textarea class="appearance-none block w-full bg-grey-lighter text-grey-darker border border-grey-lighter rounded py-3 px-4 mb-3" id="grid-password" type="message" placeholder="Type your message here..."></textarea>
+              </div>
+            </div>
+            <div class="-mx-3 md:flex mb-6">
+              <div class="md:w-2xl mx-auto px-3">
+                <input type='submit' class="block w-full bg-blue-600 border border-gray-800 rounded-md hover:bg-yellow-400 hover:border-transparent cursor-pointer py-3 px-4" id="grid-last-name" type="email" placeholder="Doe">
+              </div>
+              </div>
+          </div>
+        </div>
+      </section>
+      <section id="footer" class="bg-grey-800">
+        <section class="bg-white py-8 w-full">
+          <div class="container mx-auto text-center px-8">
+              <div class="table w-full">
+                  <div class="block sm:table-cell">
+                      <p class="uppercase text-grey text-sm sm:mb-6">Links</p>
+                      <ul class="list-reset text-xs mb-6">
+                          <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                              <a href="#" class="text-grey hover:text-grey-dark">FAQ</a>
+                          </li>
+                          <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                              <a href="#" class="text-grey hover:text-grey-dark">Help</a>
+                          </li>
+                          <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                              <a href="#" class="text-grey hover:text-grey-dark">Support</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="block sm:table-cell">
+                      <p class="uppercase text-grey text-sm sm:mb-6">Legal</p>
+                      <ul class="list-reset text-xs mb-6">
+                          <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                              <a href="#" class="text-grey hover:text-grey-dark">Terms</a>
+                          </li>
+                          <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                              <a href="#" class="text-grey hover:text-grey-dark">Privacy</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="block sm:table-cell">
+                      <p class="uppercase text-grey text-sm sm:mb-6">News</p>
+                      <ul class="list-reset text-xs mb-6">
+                          <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                              <a href="#" class="text-grey hover:text-grey-dark">Blog</a>
+                          </li>
+                          <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                              <a href="#" class="text-grey hover:text-grey-dark">Products</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="block sm:table-cell">
+                      <p class="uppercase text-grey text-sm sm:mb-6">Company</p>
+                      <ul class="list-reset text-xs mb-6">
+                          <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                              <a href="#" class="text-grey hover:text-grey-dark">Official Blog</a>
+                          </li>
+                          <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                              <a href="#" class="text-grey hover:text-grey-dark">About Us</a>
+                          </li>
+                          <li class="mt-2 inline-block mr-2 sm:block sm:mr-0">
+                              <a href="#" class="text-grey hover:text-grey-dark">Contact</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <ul class="list-style-none">
+                    <li>
+                      <ion-icon name='logo-facebook' size='large' class='cursor-pointer hover:text-blue-500'></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name='logo-twitter' size='large' class='cursor-pointer hover:text-blue-300'></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name='logo-instagram' size='large' class='cursor-pointer hover:text-pink-600'></ion-icon>
+                    </li>
+                    <li>
+                      <ion-icon name='logo-github' size='large' class='cursor-pointer hover:text-gray-600'></ion-icon>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </section>
     
 	<script>
 		//Javascript to toggle the menu
@@ -156,5 +392,6 @@
 		}
     </script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!--<script src='script.js'></script>-->
 </body>
 </html>
