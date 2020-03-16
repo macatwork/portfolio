@@ -1,5 +1,25 @@
+/* Colors */
 .active {
   color: #fff;
+}
+
+.scroll-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 1px;
+  background: #1CE;
+  -webkit-transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) width;
+  transition: 0.5s cubic-bezier(0.075, 0.82, 0.165, 1) width;
+}
+
+.hero {
+  background: url("hero.jpg") no-repeat;
+  background-size: cover;
+}
+
+.hero .hero-icon {
+  font-size: 15rem;
 }
 
 .mouse {
@@ -8,7 +28,7 @@
   width: 23px;
   height: 40px;
   border-radius: 13px;
-  border: 2px solid #1c1c1c;
+  border: 2px solid #fff;
   position: absolute;
   bottom: 15px;
   left: 50%;
@@ -19,7 +39,7 @@
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: 5;
+  animation-iteration-count: 2;
   -webkit-animation-name: scroll;
   animation-name: scroll;
 }
@@ -30,13 +50,13 @@
   width: 3px;
   height: 7px;
   border-radius: 100%;
-  background: #1c1c1c;
+  background: #fff;
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
   -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: 5;
+  animation-iteration-count: 2;
   -webkit-animation-name: scroll;
   animation-name: scroll;
 }
@@ -71,48 +91,5 @@
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   height: 0;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 10rem;
-  height: 12.5rem;
-  overflow: hidden;
-  -webkit-perspective: 1000px;
-          perspective: 1000px;
-  /* Remove this if you don't want the 3D effect */
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  -webkit-transition: -webkit-transform 0.8s;
-  transition: -webkit-transform 0.8s;
-  transition: transform 0.8s;
-  transition: transform 0.8s, -webkit-transform 0.8s;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front,
-.flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the back side */
-.flip-card-back {
-  -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
 }
 /*# sourceMappingURL=main.css.map */
